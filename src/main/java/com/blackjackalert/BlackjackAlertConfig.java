@@ -1,19 +1,19 @@
-package com.example;
+package com.blackjackalert;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("example")
-public interface ExampleConfig extends Config
+@ConfigGroup("Blackjack Glance Alert")
+public interface BlackjackAlertConfig extends Config
 {
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
+		keyName = "volume",
+		name = "Sound Effect Volume %",
 		description = "The message to show to the user when they login"
 	)
-	default String greeting()
+	default int volume()
 	{
-		return "Hello";
+		return 50;
 	}
 }
