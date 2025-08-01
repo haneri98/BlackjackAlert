@@ -10,7 +10,7 @@ public interface BlackjackAlertConfig extends Config
 	@ConfigItem(
 		keyName = "volume",
 		name = "Sound Effect Volume %",
-		description = "The message to show to the user when they login"
+		description = "Minimum 0, Maximum 100"
 	)
 	default int volume()
 	{
